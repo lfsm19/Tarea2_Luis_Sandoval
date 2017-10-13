@@ -76,6 +76,14 @@
 	  });
 	},
 	      
+	L.geoJson(rios, {
+        style: function (feature) {
+	  return {
+          fillColor: '#000000', 
+          color: '#000000'
+          };
+        },
+	      
 	onEachFeature: onEachFeature
       }).addTo(map);	    
 	    
