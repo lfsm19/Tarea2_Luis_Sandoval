@@ -42,6 +42,8 @@
 
 	if (feature.properties && feature.properties.scientif_1) {
 	  popupContent += feature.properties.scientif_1;
+	(feature.properties && feature.properties.scientif_1) {
+	  popupContent += feature.properties.verbatimLo;
 	}
 
 	layer.bindPopup(popupContent);
@@ -59,8 +61,8 @@
 	pointToLayer: function (feature, latlng) {
 	  return L.circleMarker(latlng, {
 	    radius: 3,
-	    fillColor: 'Red',
-	    color: 'Red',
+	    fillColor: '#ff0000',
+	    color: '#ff0000',
 	    weight: 1,
 	    opacity: 1,
 	    fillOpacity: 0.8
