@@ -47,10 +47,10 @@
 	  popupContent += "<br>"+ feature.properties.verbatimLo;
 	}
 	 if (feature.properties && feature.properties.decimalLat) {
-	  popupContent += "<br>"+ feature.properties.decimalLat;
+	  popupContent += "<br Lat>"+ feature.properties.decimalLat;
 	}
-	  if (feature.properties && feature.properties.decimalLon) {
-	  popupContent += "<br>"+ feature.properties.decimallon;
+	  if (feature.properties && feature.properties.decimallon) {
+	  popupContent += "<br Long>"+ feature.properties.decimallon;
 	}
 	layer.bindPopup(popupContent);
       }	    
